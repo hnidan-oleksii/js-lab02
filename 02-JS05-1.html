@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Лампочка</title>
+    </head>
+    <body>
+        <img id="bulb" src="images/white-bulb.png" alt="Лампочка" style="width:100px; height:auto;">
+        <button onclick="turnOn()">Включити</button>
+        <button onclick="turnOff()">Вимкнути</button>
+
+        <script>
+            function turnOn() {
+                document.getElementById('bulb').src = 'images/yellow-bulb.png';
+            }
+            function turnOff() {
+                document.getElementById('bulb').src = 'images/white-bulb.png';
+            }
+        </script>
+    </body>
+</html>
